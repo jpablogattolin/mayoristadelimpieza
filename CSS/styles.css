@@ -49,7 +49,7 @@ body {
     height: 100px;
     width: 100px;
     border: 5px solid gray;
-    animation-delay: 12s;
+    animation-delay: 20s;
     -webkit-animation: roll-in-blurred-left 0.65s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
     animation: roll-in-blurred-left 0.65s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 }
@@ -124,13 +124,16 @@ a {
     margin: 10px;
     font-size: medium;
 
+
 }
+
+
 
 .menu__li:hover {
     transform: scale(1.2);
     transition: all 1s ease;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
+    border-radius: 10px;
 
 }
 
@@ -141,6 +144,7 @@ a {
     justify-content: center;
     align-items: center;
 }
+  
 
 .login__input--grayfocus:focus {
     color: #000000;
@@ -156,29 +160,6 @@ a {
     animation: slide-bck-center .45s cubic-bezier(.47, 0.000, .745, .715) both;
 
 
-    @-webkit-keyframes slide-bck-center {
-        0% {
-            -webkit-transform: translateZ(0);
-            transform: translateZ(0)
-        }
-
-        100% {
-            -webkit-transform: translateZ(-400px);
-            transform: translateZ(-400px)
-        }
-    }
-
-    @keyframes slide-bck-center {
-        0% {
-            -webkit-transform: translateZ(0);
-            transform: translateZ(0)
-        }
-
-        100% {
-            -webkit-transform: translateZ(-400px);
-            transform: translateZ(-400px)
-        }
-    }
 }
 
 .login__label {
