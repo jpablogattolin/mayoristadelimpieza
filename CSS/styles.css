@@ -12,7 +12,7 @@
 body {
     background: rgb(0, 212, 255);
     background: linear-gradient(90deg, rgba(0, 212, 255, 1) 13%, rgba(83, 83, 150, 1) 58%, rgba(52, 60, 91, 0.8995798148360907) 86%, rgba(52, 60, 91, 0.8995798148360907) 100%);
-    
+ 
 }
 
 
@@ -155,16 +155,14 @@ a {
 .login p {
     font-family: 'Oswald', sans-serif;
     padding: 5px 0;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    -webkit-animation: slide-bck-center .45s cubic-bezier(.47, 0.000, .745, .715) both;
-    animation: slide-bck-center .45s cubic-bezier(.47, 0.000, .745, .715) both;
-
+     
 
 }
 
 .login__label {
     font-family: 'Oswald', sans-serif;
     padding: 5px 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .login__btn {
