@@ -395,3 +395,32 @@ a {
 .redes__p mark {
     background-color: #7283ad;
 }
+
+
+/*** MEDIA QUERIES***/
+
+
+/*@media screen and (max-width: 992px) {
+
+    body{
+        background:#000000;
+    }
+
+}
+   */
+@media (min-width:300px) and (max-width:576px) {
+    body {
+        background: #000000;
+    }
+    .gridcontainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 2fr 0.5;
+    
+        grid-template-areas: "header header "
+                              "main main "
+                              "aside aside"
+                              "footer"
+
+    }                        
+}
+
