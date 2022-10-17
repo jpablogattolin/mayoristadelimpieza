@@ -227,8 +227,8 @@ a {
     gap: 50px;
     flex-flow: row nowrap;
     width: 100%;
-    
-    
+
+
 }
 
 .content li {
@@ -245,8 +245,8 @@ a {
     border-radius: 20px;
     flex-wrap: wrap;
     padding: 15px;
-    
-     
+
+
 
 }
 
@@ -259,10 +259,10 @@ a {
     border-radius: 20px;
     flex-wrap: wrap;
     padding: 15px;
-    
-    
-    
-    
+
+
+
+
 }
 
 .content__enlaces {
@@ -409,20 +409,31 @@ a {
 }
 */
 
-   @media only screen and (max-width: 576px) {
+@media only screen and (max-width: 576px) {
     body {
         background: #000000;
     }
 
     .gridcontainer {
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.3fr 2fr 0.5;
-    
-        grid-template-areas: "header  "
-                              "main  "
-                              "aside "
-                              "footer"
 
-    }                        
+        display: flex;
+        flex-wrap: wrap;
+        grid-template-areas: "header header"
+                             "main main"
+                             "aside aside"
+                             "footer footer";
+    }
+
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
 }
-
