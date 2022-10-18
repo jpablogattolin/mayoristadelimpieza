@@ -279,6 +279,39 @@ a {
     align-items: center;
 }
 
+/***MAIN QUIENES SOMOS***/
+
+.history{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.history__h1{
+    display: flex;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 40px;
+    justify-content: center;
+
+}
+
+.history__h2{
+    margin-left: 15px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+
+}
+
+.history__img{
+    
+    height:200px;
+    width: 200px;
+    border-radius: 10px;
+    margin-top: 15px;
+    
+    
+}
+
 
 
 /**** ASIDE****/
