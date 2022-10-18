@@ -183,6 +183,8 @@ a {
 .main {
     grid-area: main;
     border-radius: 2px #698894;
+    
+    
 
 }
 
@@ -282,18 +284,13 @@ a {
 /***MAIN QUIENES SOMOS***/
 
 
-.main {
-    display: flex;
-    flex-direction: column;
-    
-    justify-content: center;
-    align-items: center;
-}
 
 .history{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+   display: grid;
+   justify-items: center;
+   margin-top: 30px;
+   margin-left: 100px;
+   gap:5px;
 }
 
 .history__h1{
@@ -301,6 +298,8 @@ a {
     font-family: 'Rajdhani', sans-serif;
     font-size: 40px;
     justify-content: center;
+    align-items: center;
+    font-style: italic;
 
 }
 
@@ -308,6 +307,7 @@ a {
     margin-left: 15px;
     font-family: 'Rajdhani', sans-serif;
     font-size: 20px;
+    align-items: center;
 
 }
 
@@ -317,6 +317,7 @@ a {
     width: 250px;
     border-radius: 10px;
     margin: 30px 30px 15px 300px;
+    justify-content: left;
     
     
 }
@@ -324,6 +325,9 @@ a {
 .table {
     border: 2px solid #293a8c;
     border-radius: 10px;
+    justify-content: flex-end;
+    margin-left: 60px;
+    
 }
 
 .table__th {
