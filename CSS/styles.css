@@ -417,38 +417,38 @@ a {
     .gridcontainer {
 
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(5,1fr);
+        grid-template-rows: repeat(5, 1fr);
         gap: 5px;
 
         grid-template-areas: "header"
-                             " main "
-                             "  main "
-                             "aside"
-                             "footer"
-        
-           
+            "main "
+            "main "
+            "aside"
+            "footer"
+
+
     }
-    
-    .header{
+
+    .header {
         display: flex;
-        justify-content:left;
-        
+        justify-content: left;
+
     }
 
     .logo {
-        justify-content:flex-end;
+        justify-content: flex-end;
         align-items: flex-end;
 
-        
+
     }
 
     .logo__img {
         justify-content: center;
     }
 
-    .logo__p{
+    .logo__p {
         align-items: right;
-        font-size:small;
+        font-size: small;
     }
 
     .nav__menu {
@@ -462,25 +462,25 @@ a {
         flex-wrap: wrap;
     }
 
-    
-       
-    .slider{
-        margin:0;
+
+
+    .slider {
+        margin: 0;
         margin-top: 10px;
     }
 
-    .content{
+    .content {
         margin-left: 0;
-        gap:0;
+        gap: 0;
     }
-    
-    .footer__redes{
+
+    .footer__redes {
         flex-direction: column;
         flex-wrap: wrap;
     }
- 
 
 
-   
+
+
 
 }
