@@ -698,9 +698,72 @@ a {
         gap: 0;
     }
 
+    h1 mark {
+        text-align: center;
+    }
     .footer__redes {
         flex-direction: column;
         flex-wrap: wrap;
     }
 
+
+
+/***FIN HOME****/
+
+/***QUIENES SOMOS***/
+
+.history__img{
+    margin:50px;
+    display: flex;
+    
+}
+
+.table{
+    display: flex;
+    justify-content:center;
+    margin-left:0;
+}
+
+h1 {
+    display: flex;
+    justify-content: left;
+}
+
+.history {
+    margin:0;
+
+}
+
+/***FIN QUIENES SOMOS***/
+
+/***CONTACTO***/
+
+.contacto {
+    flex-direction: column;
+}
+
+.contacto__h1 {
+    justify-content: center;
+}
+
+/***FIN CONTACTO***/
+
+/***DONDE COMPRAR***/
+
+.ubicacion-contenedor {
+    flex-direction: column;
+    padding: 20px;
+}
+
+.ubicacion__h1 {
+    justify-content: center;
+}
+
+.medios-de-pago {
+    margin-top: 15px;
+}
+
+
+
+/***FIN DONDE COMPRAR***/
 }
