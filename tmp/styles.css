@@ -159,20 +159,11 @@ a {
 
 }
 
-
 .login__label {
     font-family: 'Oswald', sans-serif;
     padding: 5px 0;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
-
-.login__label:hover {
-    transform: scale(1.2);
-    transition: all 1s ease;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
-}
-
 
 .login__btn {
     font-family: 'Oswald', sans-serif;
@@ -192,7 +183,7 @@ a {
 .main {
     grid-area: main;
     border-radius: 2px #698894;
-    
+
 }
 
 .main__h1 {
@@ -296,18 +287,16 @@ a {
 
 /***MAIN QUIENES SOMOS***/
 
-
-
-.history{
-   display: flex;
-   flex-direction: column;
-   justify-items: center;
-   margin-top: 30px;
-   margin-left: 100px;
-   gap:5px;
+.history {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin-top: 30px;
+    margin-left: 100px;
+    gap: 5px;
 }
 
-.history__h1{
+.history__h1 {
     display: flex;
     font-family: 'Rajdhani', sans-serif;
     font-size: 40px;
@@ -317,7 +306,7 @@ a {
 
 }
 
-.history__h2{
+.history__h2 {
     margin-left: 15px;
     font-family: 'Rajdhani', sans-serif;
     font-size: 20px;
@@ -325,15 +314,15 @@ a {
 
 }
 
-.history__img{
-    display:flex;
-    height:200px;
+.history__img {
+    display: flex;
+    height: 200px;
     width: 250px;
     border-radius: 10px;
     margin: 30px 30px 15px 300px;
-    
-    
-    
+
+
+
 }
 
 .table {
@@ -342,17 +331,17 @@ a {
     justify-content: flex-end;
     margin-left: 100px;
     margin-top: 30px;
-    
+
 }
 
 .table__th {
     font-family: 'Rajdhani', sans-serif;
     font-size: 2em;
     border: 2px solid #293a8c;
-    
+
 }
 
-.table__td{
+.table__td {
     font-family: 'Rajdhani', sans-serif;
     font-size: 1em;
     border: 2px solid #293a8c;
@@ -361,6 +350,155 @@ a {
 .table tr:hover {
     background-color: #575783;
 }
+
+/*** FIN MAIN QUIENES SOMOS***/
+
+/*** MAIN CONTACTO ***/
+
+.main__contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto__h1 {
+    display: flex;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 40px;
+    color: #293a8c;
+    justify-content: flex-end;
+
+}
+
+.contacto {
+
+    padding: 10px;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.contacto__form {
+
+    font-family: 'Rajdhani', sans-serif;
+    background: rgb(0, 212, 255);
+    background: linear-gradient(90deg, rgba(0, 212, 255, 1) 13%, rgba(83, 83, 150, 1) 47%, rgba(52, 60, 91, 0.8995798148360907) 72%, rgba(52, 60, 91, 0.8995798148360907) 92%);
+    border: 2px solid #293a8c;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    justify-content: center;
+    margin: 20px 20px 20px 40px;
+    padding: 10px;
+
+}
+
+.form__label {
+    display: flex;
+    font-weight: 200px;
+    justify-content: left;
+    padding: 5px;
+
+}
+
+.form__input:focus {
+    background-color: #575783;
+    color: #000000;
+}
+
+.contacto__form textarea {
+    margin-top: 15px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.form__input {
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.phone-numbers {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin-left: 50px;
+    border: 2px solid #575783;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+
+
+
+}
+
+.phone__h2 {
+    font-family: 'Rajdhani', sans-serif;
+    color: #293a8c;
+    margin: 30px 15px;
+}
+
+.phone__h3 {
+    font-family: 'Rajdhani', sans-serif;
+    color: #293a8c;
+
+}
+
+/***FIN MAIN CONTACTO***/
+
+/*** COMIENZO MAIN ADONDE COMPRAR ***/
+
+.ubicacion__h1 {
+    display: flex;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 40px;
+    color: #293a8c;
+    justify-content: flex-end;
+
+}
+
+.ubicacion__h2 {
+    display: flex;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    color:#698894;
+    margin-bottom: 30px;
+    justify-content: center;
+
+}
+
+.ubicacion__map {
+    margin-left: 20px;
+    border: 2px solid #575783;
+    border-radius: 10px;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    
+}
+
+.ubicacion-contenedor {
+    display: flex;
+    align-items: center;
+
+}
+
+.medios-de-pago {
+    margin-left: 40px;
+    
+    
+}
+
+
+
+.medios-de-pago li {
+    list-style-type: none;
+    padding:10px;
+    border: 2px solid #575783;
+    border-radius: 10px;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    
+}
+
+/***FIN MAIN DONDE COMPRAR**/
+
 
 /**** ASIDE****/
 
@@ -485,7 +623,7 @@ a {
 
 
 @media only screen and (max-width: 480px) {
-    
+
     .gridcontainer {
 
         grid-template-columns: 1fr;
@@ -511,7 +649,7 @@ a {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        
+
 
 
     }
@@ -526,7 +664,7 @@ a {
         flex-direction: column;
         justify-content: center;
         font-size: small;
-        
+
     }
 
     .nav__menu {
@@ -534,14 +672,14 @@ a {
         flex-wrap: wrap;
         align-items: baseline;
         margin-left: 15px;
-        
+
     }
 
-    .menu__li{
-        margin:5px;
+    .menu__li {
+        margin: 5px;
     }
 
-   
+
     .login {
         display: flex;
         flex-direction: column;
@@ -552,7 +690,7 @@ a {
     .slider {
         margin: 0;
         margin-top: 10px;
-        width:auto;
+        width: auto;
     }
 
     .content {
@@ -560,9 +698,72 @@ a {
         gap: 0;
     }
 
+    h1 mark {
+        text-align: center;
+    }
     .footer__redes {
         flex-direction: column;
         flex-wrap: wrap;
     }
 
+
+
+/***FIN HOME****/
+
+/***QUIENES SOMOS***/
+
+.history__img{
+    margin:50px;
+    display: flex;
+    
+}
+
+.table{
+    display: flex;
+    justify-content:center;
+    margin-left:0;
+}
+
+h1 {
+    display: flex;
+    justify-content: left;
+}
+
+.history {
+    margin:0;
+
+}
+
+/***FIN QUIENES SOMOS***/
+
+/***CONTACTO***/
+
+.contacto {
+    flex-direction: column;
+}
+
+.contacto__h1 {
+    justify-content: center;
+}
+
+/***FIN CONTACTO***/
+
+/***DONDE COMPRAR***/
+
+.ubicacion-contenedor {
+    flex-direction: column;
+    padding: 20px;
+}
+
+.ubicacion__h1 {
+    justify-content: center;
+}
+
+.medios-de-pago {
+    margin-top: 15px;
+}
+
+
+
+/***FIN DONDE COMPRAR***/
 }
