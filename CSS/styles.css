@@ -362,6 +362,158 @@ a {
     background-color: #575783;
 }
 
+/***FIN MAIN QUIENES SOMOS***/
+
+/***CONTACTO***/
+
+
+.main__contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto__h1 {
+    display: flex;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 40px;
+    color: #293a8c;
+    justify-content: flex-end;
+
+}
+
+.contacto {
+
+    padding: 10px;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.contacto__form {
+
+    font-family: 'Rajdhani', sans-serif;
+    background: rgb(0, 212, 255);
+    background: linear-gradient(90deg, rgba(0, 212, 255, 1) 13%, rgba(83, 83, 150, 1) 47%, rgba(52, 60, 91, 0.8995798148360907) 72%, rgba(52, 60, 91, 0.8995798148360907) 92%);
+    border: 2px solid #293a8c;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    justify-content: center;
+    margin: 20px 20px 20px 40px;
+    padding: 10px;
+
+}
+
+.form__label {
+    display: flex;
+    font-weight: 200px;
+    justify-content: left;
+    padding: 5px;
+
+}
+
+.form__input:focus {
+    background-color: #575783;
+    color: #000000;
+}
+
+.contacto__form textarea {
+    margin-top: 15px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.form__input {
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.phone-numbers {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin-left: 50px;
+    border: 2px solid #575783;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+
+
+
+}
+
+.phone__h2 {
+    font-family: 'Rajdhani', sans-serif;
+    color: #293a8c;
+    margin: 30px 15px;
+}
+
+.phone__h3 {
+    font-family: 'Rajdhani', sans-serif;
+    color: #293a8c;
+
+}
+
+/***FIN MAIN CONTACTO***/
+
+/*** COMIENZO MAIN ADONDE COMPRAR ***/
+
+.ubicacion__h1 {
+    display: flex;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 40px;
+    color: #293a8c;
+    justify-content: flex-end;
+
+}
+
+.ubicacion__h2 {
+    display: flex;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    color:#698894;
+    margin-bottom: 30px;
+    justify-content: center;
+
+}
+
+.ubicacion__map {
+    margin-left: 20px;
+    border: 2px solid #575783;
+    border-radius: 10px;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+
+}
+
+.ubicacion-contenedor {
+    display: flex;
+    align-items: center;
+
+}
+
+.medios-de-pago {
+    margin-left: 40px;
+
+
+}
+
+
+
+.medios-de-pago li {
+    list-style-type: none;
+    padding:10px;
+    border: 2px solid #575783;
+    border-radius: 10px;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+
+}
+
+/***FIN MAIN DONDE COMPRAR**/
+
+
+
+
 /**** ASIDE****/
 
 .aside {
@@ -565,4 +717,64 @@ a {
         flex-wrap: wrap;
     }
 
+
+
+
+/***FIN HOME****/
+
+/***QUIENES SOMOS***/
+
+.history__img{
+    margin:50px;
+    display: flex;
+
 }
+
+.table{
+    display: flex;
+    justify-content:center;
+    margin-left:0;
+}
+
+h1 {
+    display: flex;
+    justify-content: left;
+}
+
+.history {
+    margin:0;
+
+}
+
+/***FIN QUIENES SOMOS***/
+
+/***CONTACTO***/
+
+.contacto {
+    flex-direction: column;
+}
+
+.contacto__h1 {
+    justify-content: center;
+}
+
+/***FIN CONTACTO***/
+
+/***DONDE COMPRAR***/
+
+.ubicacion-contenedor {
+    flex-direction: column;
+    padding: 20px;
+}
+
+.ubicacion__h1 {
+    justify-content: center;
+}
+
+.medios-de-pago {
+    margin-top: 15px;
+}
+
+}
+
+/***FIN DONDE COMPRAR***/
