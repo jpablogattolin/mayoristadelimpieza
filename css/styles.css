@@ -511,7 +511,19 @@ a {
 
 /***FIN MAIN DONDE COMPRAR**/
 
+<<<<<<< HEAD
 
+=======
+/*** MAIN PRODUCTOS**/
+
+.h1__prod {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rajdhani', sans-serif;
+    color:#293a8c;
+}
+>>>>>>> dev
 
 
 /**** ASIDE****/
