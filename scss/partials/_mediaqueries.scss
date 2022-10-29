@@ -1,0 +1,147 @@
+
+/**HOME**/
+
+
+
+@media only screen and (max-width: 480px) {
+    
+    .gridcontainer {
+
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        gap: 5px;
+
+        grid-template-areas: "header"
+            "main "
+            "main "
+            "aside"
+            "footer"
+
+
+    }
+
+    .header {
+        display: flex;
+        justify-content: left;
+
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+
+
+    }
+
+    .logo__img {
+        justify-content: center;
+        margin-left: 5px;
+    }
+
+    .logo__p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: small;
+        
+    }
+
+    .nav__menu {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: baseline;
+        margin-left: 15px;
+        
+    }
+
+    .menu__li{
+        margin:5px;
+    }
+
+   
+    .login {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-right: 10px;
+    }
+
+    .slider {
+        margin: 0;
+        margin-top: 10px;
+        width:auto;
+    }
+
+    .content {
+        margin-left: 0;
+        gap: 0;
+    }
+
+    .footer__redes {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+
+
+
+/***FIN HOME****/
+
+/***QUIENES SOMOS***/
+
+.history__img{
+    margin:50px;
+    display: flex;
+
+}
+
+.table{
+    display: flex;
+    justify-content:center;
+    margin-left:0;
+}
+
+h1 {
+    display: flex;
+    justify-content: left;
+}
+
+.history {
+    margin:0;
+
+}
+
+/***FIN QUIENES SOMOS***/
+
+/***CONTACTO***/
+
+.contacto {
+    flex-direction: column;
+}
+
+.contacto__h1 {
+    justify-content: center;
+}
+
+/***FIN CONTACTO***/
+
+/***DONDE COMPRAR***/
+
+.ubicacion-contenedor {
+    flex-direction: column;
+    padding: 20px;
+}
+
+.ubicacion__h1 {
+    justify-content: center;
+}
+
+.medios-de-pago {
+    margin-top: 15px;
+}
+
+}
+
+/***FIN DONDE COMPRAR***/
