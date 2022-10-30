@@ -8,17 +8,19 @@
     justify-content: center;
     align-items: center;
 
+    .aside__img {
+        height: 300px;
+        width: 300px;
+        border-radius: 10px;
+        animation-delay: 50s;
+        -webkit-animation: slit-in-vertical .45s ease-out both;
+        animation: slit-in-vertical .45s ease-out both;
+    }
+
 
 }
 
-.aside__img {
-    height: 300px;
-    width: 300px;
-    border-radius: 10px;
-    animation-delay: 50s;
-    -webkit-animation: slit-in-vertical .45s ease-out both;
-    animation: slit-in-vertical .45s ease-out both;
-}
+
 
 @-webkit-keyframes slit-in-vertical {
     0% {

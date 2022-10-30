@@ -38,10 +38,11 @@
     position: relative;
     z-index: 50;
     margin: 10px;
-}
 
-.slider__input:checked~img {
-    opacity: 1;
+    &:checked~img{
+        opacity: 1;
+    
+    }
 }
 
 .content {
@@ -52,53 +53,54 @@
     flex-flow: row nowrap;
     width: 100%;
 
+    .content li {
+        list-style-type: none;
+    }
+
+    .content__location {
+        display: flex;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: large;
+        border: 2px solid #293a8c;
+        background-color: #fff3c4;
+        border-radius: 20px;
+        flex-wrap: wrap;
+        padding: 15px;
+           
+    }
+
+    .content__marcas {
+        display: flex;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: large;
+        border: 2px solid #293a8c;
+        background-color: #fff3c4;
+        border-radius: 20px;
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+
+    .content__enlaces {
+        display: flex;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: large;
+        border: 2px solid #293a8c;
+        background-color: #fff3c4;
+        border-radius: 20px;
+        padding: 15px;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
 
 }
 
-.content li {
-    list-style-type: none;
-}
-
-
-.content__location {
-    display: flex;
-    font-family: 'Rajdhani', sans-serif;
-    font-size: large;
-    border: 2px solid #293a8c;
-    background-color: #fff3c4;
-    border-radius: 20px;
-    flex-wrap: wrap;
-    padding: 15px;
-
-
-
-}
-
-.content__marcas {
-    display: flex;
-    font-family: 'Rajdhani', sans-serif;
-    font-size: large;
-    border: 2px solid #293a8c;
-    background-color: #fff3c4;
-    border-radius: 20px;
-    flex-wrap: wrap;
-    padding: 15px;
 
 
 
 
-}
 
-.content__enlaces {
-    display: flex;
-    font-family: 'Rajdhani', sans-serif;
-    font-size: large;
-    border: 2px solid #293a8c;
-    background-color: #fff3c4;
-    border-radius: 20px;
-    padding: 15px;
-    flex-grow: 1;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
+
+

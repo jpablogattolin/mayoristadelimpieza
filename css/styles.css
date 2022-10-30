@@ -142,9 +142,8 @@
   position: relative;
   z-index: 50;
   margin: 10px; }
-
-.slider__input:checked ~ img {
-  opacity: 1; }
+  .slider__input:checked ~ img {
+    opacity: 1; }
 
 .content {
   display: flex;
@@ -153,42 +152,38 @@
   gap: 50px;
   flex-flow: row nowrap;
   width: 100%; }
-
-.content li {
-  list-style-type: none; }
-
-.content__location {
-  display: flex;
-  font-family: 'Rajdhani', sans-serif;
-  font-size: large;
-  border: 2px solid #293a8c;
-  background-color: #fff3c4;
-  border-radius: 20px;
-  flex-wrap: wrap;
-  padding: 15px; }
-
-.content__marcas {
-  display: flex;
-  font-family: 'Rajdhani', sans-serif;
-  font-size: large;
-  border: 2px solid #293a8c;
-  background-color: #fff3c4;
-  border-radius: 20px;
-  flex-wrap: wrap;
-  padding: 15px; }
-
-.content__enlaces {
-  display: flex;
-  font-family: 'Rajdhani', sans-serif;
-  font-size: large;
-  border: 2px solid #293a8c;
-  background-color: #fff3c4;
-  border-radius: 20px;
-  padding: 15px;
-  flex-grow: 1;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; }
+  .content .content li {
+    list-style-type: none; }
+  .content .content__location {
+    display: flex;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: large;
+    border: 2px solid #293a8c;
+    background-color: #fff3c4;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    padding: 15px; }
+  .content .content__marcas {
+    display: flex;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: large;
+    border: 2px solid #293a8c;
+    background-color: #fff3c4;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    padding: 15px; }
+  .content .content__enlaces {
+    display: flex;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: large;
+    border: 2px solid #293a8c;
+    background-color: #fff3c4;
+    border-radius: 20px;
+    padding: 15px;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
 
 .history {
   display: flex;
@@ -197,27 +192,24 @@
   margin-top: 30px;
   margin-left: 100px;
   gap: 5px; }
-
-.history__h1 {
-  display: flex;
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 40px;
-  justify-content: center;
-  align-items: center;
-  font-style: italic; }
-
-.history__h2 {
-  margin-left: 15px;
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 20px;
-  align-items: center; }
-
-.history__img {
-  display: flex;
-  height: 200px;
-  width: 250px;
-  border-radius: 10px;
-  margin: 30px 30px 15px 300px; }
+  .history .history__h1 {
+    display: flex;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    font-style: italic; }
+  .history .history__h2 {
+    margin-left: 15px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    align-items: center; }
+  .history .history__img {
+    display: flex;
+    height: 200px;
+    width: 250px;
+    border-radius: 10px;
+    margin: 30px 30px 15px 300px; }
 
 .table {
   border: 2px solid #293a8c;
@@ -225,85 +217,72 @@
   justify-content: flex-end;
   margin-left: 100px;
   margin-top: 30px; }
-
-.table__th {
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 2em;
-  border: 2px solid #293a8c; }
-
-.table__td {
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 1em;
-  border: 2px solid #293a8c; }
-
-.table tr:hover {
-  background-color: #575783; }
+  .table .table tr:hover {
+    background-color: #575783; }
+  .table .table__th {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2em;
+    border: 2px solid #293a8c; }
+  .table .table__td {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1em;
+    border: 2px solid #293a8c; }
 
 .main__contacto {
   display: flex;
   flex-direction: column; }
-
-.contacto__h1 {
-  display: flex;
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 40px;
-  color: #293a8c;
-  justify-content: flex-end; }
-
-.contacto {
-  padding: 10px;
-  display: flex;
-  align-items: center; }
-
-.contacto__form {
-  font-family: 'Rajdhani', sans-serif;
-  background: #00d4ff;
-  background: linear-gradient(90deg, #00d4ff 13%, #535396 47%, rgba(52, 60, 91, 0.89958) 72%, rgba(52, 60, 91, 0.89958) 92%);
-  border: 2px solid #293a8c;
-  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
-  justify-content: center;
-  margin: 20px 20px 20px 40px;
-  padding: 10px; }
-
-.form__label {
-  display: flex;
-  font-weight: 200px;
-  justify-content: left;
-  padding: 5px; }
-
-.form__input:focus {
-  background-color: #575783;
-  color: #000000; }
-
-.contacto__form textarea {
-  margin-top: 15px;
-  margin-left: 10px;
-  border-radius: 10px; }
-
-.form__input {
-  margin-top: 10px;
-  margin-left: 20px;
-  border-radius: 10px; }
-
-.phone-numbers {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: baseline;
-  margin-left: 50px;
-  border: 2px solid #575783;
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px; }
-
-.phone__h2 {
-  font-family: 'Rajdhani', sans-serif;
-  color: #293a8c;
-  margin: 30px 15px; }
-
-.phone__h3 {
-  font-family: 'Rajdhani', sans-serif;
-  color: #293a8c; }
+  .main__contacto .contacto__h1 {
+    display: flex;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 40px;
+    color: #293a8c;
+    justify-content: flex-end; }
+  .main__contacto .contacto {
+    padding: 10px;
+    display: flex;
+    align-items: center; }
+    .main__contacto .contacto .contacto__form {
+      font-family: 'Rajdhani', sans-serif;
+      background: #00d4ff;
+      background: linear-gradient(90deg, #00d4ff 13%, #535396 47%, rgba(52, 60, 91, 0.89958) 72%, rgba(52, 60, 91, 0.89958) 92%);
+      border: 2px solid #293a8c;
+      box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+      justify-content: center;
+      margin: 20px 20px 20px 40px;
+      padding: 10px; }
+      .main__contacto .contacto .contacto__form .form__label {
+        display: flex;
+        font-weight: 200px;
+        justify-content: left;
+        padding: 5px; }
+      .main__contacto .contacto .contacto__form .form__input {
+        margin-top: 10px;
+        margin-left: 20px;
+        border-radius: 10px; }
+        .main__contacto .contacto .contacto__form .form__input:focus {
+          background-color: #575783;
+          color: #000000; }
+      .main__contacto .contacto .contacto__form .contacto__form textarea {
+        margin-top: 15px;
+        margin-left: 10px;
+        border-radius: 10px; }
+  .main__contacto .phone-numbers {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin-left: 50px;
+    border: 2px solid #575783;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px; }
+    .main__contacto .phone-numbers .phone__h2 {
+      font-family: 'Rajdhani', sans-serif;
+      color: #293a8c;
+      margin: 30px 15px; }
+    .main__contacto .phone-numbers .phone__h3 {
+      font-family: 'Rajdhani', sans-serif;
+      color: #293a8c; }
 
 .ubicacion__h1 {
   display: flex;
@@ -312,33 +291,30 @@
   color: #293a8c;
   justify-content: flex-end; }
 
-.ubicacion__h2 {
-  display: flex;
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 20px;
-  color: #698894;
-  margin-bottom: 30px;
-  justify-content: center; }
-
-.ubicacion__map {
-  margin-left: 20px;
-  border: 2px solid #575783;
-  border-radius: 10px;
-  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px; }
-
 .ubicacion-contenedor {
   display: flex;
   align-items: center; }
+  .ubicacion-contenedor .ubicacion__h2 {
+    display: flex;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    color: #698894;
+    margin-bottom: 30px;
+    justify-content: center; }
+  .ubicacion-contenedor .ubicacion__map {
+    margin-left: 20px;
+    border: 2px solid #575783;
+    border-radius: 10px;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px; }
 
 .medios-de-pago {
   margin-left: 40px; }
-
-.medios-de-pago li {
-  list-style-type: none;
-  padding: 10px;
-  border: 2px solid #575783;
-  border-radius: 10px;
-  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px; }
+  .medios-de-pago li {
+    list-style-type: none;
+    padding: 10px;
+    border: 2px solid #575783;
+    border-radius: 10px;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px; }
 
 .h1__prod {
   display: flex;
@@ -356,14 +332,13 @@
   background-color: #fff3c4;
   justify-content: center;
   align-items: center; }
-
-.aside__img {
-  height: 300px;
-  width: 300px;
-  border-radius: 10px;
-  animation-delay: 50s;
-  -webkit-animation: slit-in-vertical .45s ease-out both;
-  animation: slit-in-vertical .45s ease-out both; }
+  .aside .aside__img {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    animation-delay: 50s;
+    -webkit-animation: slit-in-vertical .45s ease-out both;
+    animation: slit-in-vertical .45s ease-out both; }
 
 @-webkit-keyframes slit-in-vertical {
   0% {

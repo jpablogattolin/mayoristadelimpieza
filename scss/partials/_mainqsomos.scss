@@ -5,60 +5,71 @@
     margin-top: 30px;
     margin-left: 100px;
     gap:5px;
- }
- 
- .history__h1{
-     display: flex;
-     font-family: 'Rajdhani', sans-serif;
-     font-size: 40px;
-     justify-content: center;
-     align-items: center;
-     font-style: italic;
- 
- }
- 
- .history__h2{
-     margin-left: 15px;
-     font-family: 'Rajdhani', sans-serif;
-     font-size: 20px;
-     align-items: center;
- 
- }
- 
- .history__img{
-     display:flex;
-     height:200px;
-     width: 250px;
-     border-radius: 10px;
-     margin: 30px 30px 15px 300px;
-     
-     
-     
+
+    .history__h1{
+        display: flex;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 40px;
+        justify-content: center;
+        align-items: center;
+        font-style: italic;
+    
+    }
+
+    .history__h2{
+        margin-left: 15px;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 20px;
+        align-items: center;
+    
+    }
+
+    .history__img{
+        display:flex;
+        height:200px;
+        width: 250px;
+        border-radius: 10px;
+        margin: 30px 30px 15px 300px;
+    
+      
+    }
  }
  
  .table {
-     border: 2px solid #293a8c;
-     border-radius: 10px;
-     justify-content: flex-end;
-     margin-left: 100px;
-     margin-top: 30px;
-     
- }
+    border: 2px solid #293a8c;
+    border-radius: 10px;
+    justify-content: flex-end;
+    margin-left: 100px;
+    margin-top: 30px;
+
+    .table tr:hover {
+        background-color: #575783;
+    }
+
+    .table__th {
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 2em;
+        border: 2px solid #293a8c;
+        
+    }
+
+    .table__td{
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 1em;
+        border: 2px solid #293a8c;
+    }
+    
+} 
  
- .table__th {
-     font-family: 'Rajdhani', sans-serif;
-     font-size: 2em;
-     border: 2px solid #293a8c;
-     
- }
  
- .table__td{
-     font-family: 'Rajdhani', sans-serif;
-     font-size: 1em;
-     border: 2px solid #293a8c;
- }
  
- .table tr:hover {
-     background-color: #575783;
- }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
