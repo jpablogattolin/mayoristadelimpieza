@@ -1,13 +1,18 @@
 
+@mixin flex($direction,$wrap,$justify,$align) {
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap:$wrap;
+    justify-content: $justify;
+    align-items: $align;
+}
 
 .header {
     grid-area: header;
     background-color: #fff3c4;
     border: 2px solid #293a8c;
     border-radius: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    @include flex(row,wrap,space-evenly,center);
 
     .logo__img {
         height: 100px;
@@ -34,8 +39,8 @@
     
     .nav__menu {
 
-        display: flex;
-        align-items: center;
+        
+        @include flex($direction,$wrap,$justify,center);
         list-style-type: none;
    
     
@@ -43,13 +48,13 @@
 
             a {
                 
-                display: flex;
-                justify-content: space-evenly;
+                @include flex($direction,$wrap,space-evenly,$align);
                 color: #293a8c;
                 font-family: 'Oswald', sans-serif;
                 margin: 10px;
                 font-size: medium;
                 text-decoration: none;
+                
                 
             }
 
@@ -70,10 +75,8 @@
        
                   
     .login {
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
+       
+        @include flex(column,wrap,center,center);
 
         .login p {
             font-family: 'Oswald', sans-serif;
@@ -156,6 +159,7 @@
             }
         }
     
+
 
 
 

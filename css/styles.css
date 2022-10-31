@@ -21,6 +21,8 @@
   border: 2px solid #293a8c;
   border-radius: 10px;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center; }
   .header .logo__img {
@@ -57,7 +59,8 @@
       border-radius: 10px; }
   .header .login {
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center; }
     .header .login .login p {
@@ -401,7 +404,6 @@
       transition: all 1s ease;
       color: blueviolet; }
 
-/**HOME**/
 @media only screen and (max-width: 480px) {
   .gridcontainer {
     grid-template-columns: 1fr;
@@ -475,4 +477,4 @@
   .medios-de-pago {
     margin-top: 15px; } }
 
-/***FIN DONDE COMPRAR***/
+/***FIN DONDE COMPRAR**/
