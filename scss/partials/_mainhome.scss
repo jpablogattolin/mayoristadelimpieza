@@ -45,6 +45,8 @@
     }
 }
 
+/*** EXTEND***/
+
 .content {
     display: flex;
     padding: 10px;
@@ -70,18 +72,21 @@
     }
 
     .content__marcas {
-        display: flex;
+        @extend .content__location;
+        /*display: flex;
         font-family: 'Rajdhani', sans-serif;
         font-size: large;
         border: 2px solid #293a8c;
         background-color: #fff3c4;
         border-radius: 20px;
         flex-wrap: wrap;
-        padding: 15px;
+        padding: 15px;*/
     }
 
     .content__enlaces {
-        display: flex;
+
+        @extend .content__location;
+        /*display: flex;
         font-family: 'Rajdhani', sans-serif;
         font-size: large;
         border: 2px solid #293a8c;
@@ -91,7 +96,7 @@
         flex-grow: 1;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
+        align-items: center;*/
     }
 
 
