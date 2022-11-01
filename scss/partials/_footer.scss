@@ -12,6 +12,11 @@
         display: flex;
         width: 70%;
         align-items: center;
+        @include phone {
+            flex-direction: row;
+            flex-wrap: wrap;
+            text-align: left;
+        }
 
         .copyright__p {
             display: flex;
@@ -31,9 +36,15 @@
             font-family: 'Roboto', sans-serif;
             font-size: medium;
             align-items: center;
+            @include phone {
+                flex-flow: column wrap;
+            }
 
             .redes__p mark {
                 background-color: #7283ad;
+                @include phone {
+                    text-align: center;
+                }
             }
 
             
