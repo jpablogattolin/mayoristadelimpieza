@@ -7,6 +7,14 @@
     background-color: #fff3c4;
     justify-content: center;
     align-items: center;
+    @include phone {
+        display: block;
+        margin-left: 10px;
+    }
+    @include phonesmall {
+        display: flex;
+        margin-left: 0;
+    }
 
     .aside__img {
         height: 300px;

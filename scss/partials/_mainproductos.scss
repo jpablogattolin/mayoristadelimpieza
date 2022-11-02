@@ -8,16 +8,22 @@
     @include phone {
         display: block;
         margin-left: 20px;
-
     }
 
 }
 
 .container {
     display: flex;
-    @include phonesmall {
-        display: block;
-        margin-left: 50px;
-    }
-}
 
+    @include phonesmall {
+        display: flex;
+        
+
+    }
+
+    @include phone {
+        display: block;
+        margin-left: 5px;
+    }
+
+}
