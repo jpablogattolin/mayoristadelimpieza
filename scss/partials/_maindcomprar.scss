@@ -13,6 +13,9 @@
         justify-content: flex-start;
         margin-left: 25px;
     }
+    @include mobile {
+        justify-content: center;
+    }
 
 }
 
@@ -23,6 +26,9 @@
         flex-direction: column;
     }
     @include phonesmall {
+        flex-direction: column;
+    }
+    @include mobile {
         flex-direction: column;
     }
 

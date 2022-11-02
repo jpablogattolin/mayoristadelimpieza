@@ -7,6 +7,9 @@
     border-radius: 20px;
     padding: 15px 15px;
     background-color: #fff3c4;
+    @include mobile {
+        flex-direction: column;
+    }
 
     .footer__copyright {
         display: flex;
@@ -16,6 +19,9 @@
             flex-direction: row;
             flex-wrap: wrap;
             text-align: left;
+        }
+        @include mobile {
+            flex-direction: row;
         }
 
         .copyright__p {
@@ -38,6 +44,10 @@
             align-items: center;
             @include phone {
                 flex-flow: column wrap;
+            }
+            @include mobile {
+                flex-direction: row;
+                margin-left: 180px;
             }
 
             .redes__p mark {

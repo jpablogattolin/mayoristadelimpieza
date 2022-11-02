@@ -5,18 +5,18 @@
 }
   
 
-@mixin phonesmall {   /*478x667*/
+@mixin phonesmall {   /*478x640*/
     @media screen and (min-width:478px) and (max-width:575px) {
         @content;
     }
 }
 
-@mixin mobile {
-    @media only screen and (max-width:576px) {
+@mixin mobile { /*576x640*/
+    @media screen and (min-width:576px) and (max-width:767px) {
         @content;
     }
 }
-
+ 
 @mixin tablet {
     @media only screen and (max-width:768px) {
         @content;

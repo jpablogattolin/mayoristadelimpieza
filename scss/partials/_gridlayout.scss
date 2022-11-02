@@ -24,6 +24,14 @@
                              "footer";
 
     }
+    @include mobile {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "header header"
+                             "main main"
+                             "aside aside"
+                             "footer footer";
+    }
 
    
 

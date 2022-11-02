@@ -9,6 +9,9 @@
         display: block;
         margin-left: 20px;
     }
+    @include phonesmall {
+        justify-content: flex-start;
+    }
 
 }
 
@@ -17,13 +20,16 @@
 
     @include phonesmall {
         display: flex;
-        
+        flex-direction: column;       
 
     }
 
     @include phone {
         display: block;
         margin-left: 5px;
+    }
+    @include mobile {
+        flex-direction: column;
     }
 
 }
