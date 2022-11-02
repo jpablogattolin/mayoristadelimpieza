@@ -5,6 +5,9 @@
     margin-top: 30px;
     margin-left: 100px;
     gap:5px;
+    @include phone {
+        margin:0px;
+    }
 
     .history__h1{
         display: flex;
@@ -12,7 +15,12 @@
         font-size: 40px;
         justify-content: center;
         align-items: center;
-        font-style: italic;
+        
+        @include phone {
+            font-style: italic;font-size: 30px;
+            justify-content: flex-start;
+
+        }
     
     }
 
@@ -30,7 +38,9 @@
         width: 250px;
         border-radius: 10px;
         margin: 30px 30px 15px 300px;
-    
+        @include phone {
+            margin-left: 25px;
+        }
       
     }
  }
@@ -41,6 +51,9 @@
     justify-content: flex-end;
     margin-left: 100px;
     margin-top: 30px;
+    @include phone {
+        margin:0;
+    }
 
     .table tr:hover {
         background-color: #575783;

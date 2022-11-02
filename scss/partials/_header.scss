@@ -19,6 +19,10 @@
         align-items: flex-start;
         justify-content: center;
     }
+    @include phonesmall {
+        flex-direction: column;
+        align-items: flex-start;
+    }
     
 
     .logo__img {
@@ -26,6 +30,9 @@
             justify-content: flex-start;
             align-items: flex-start;
         };
+        @include phonesmall {
+            margin-left: 50px;
+        }
         height: 100px;
         width: 100px;
         border: 5px solid gray;
@@ -41,9 +48,11 @@
         transform: scale(1.5);
         @include phone {
             margin-left: 50px;
-            margin-top: 5px;
-               
+            margin-top: 5px;        
             
+        }
+        @include phonesmall {
+            margin-left: 60px;
         }
 
         &:hover {
@@ -62,6 +71,10 @@
         @include phone {
             flex-direction: column;
             flex-wrap: wrap;
+            align-items: baseline;
+        }
+        @include phonesmall {
+            flex-direction: column;
             align-items: baseline;
         }
    
@@ -102,6 +115,9 @@
         @include phone {
             margin-left: 30px;
         };
+        @include phonesmall {
+            margin-left: 30px;
+        }
 
         .login p {
             font-family: 'Oswald', sans-serif;
@@ -138,6 +154,9 @@
             @include phone {
                 margin-bottom: 10px;
             };
+            @include phonesmall {
+                margin-bottom: 10px;
+            }
 
             &:hover {
 

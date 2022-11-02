@@ -3,5 +3,13 @@
     justify-content: center;
     align-items: center;
     font-family: 'Rajdhani', sans-serif;
-    color:#293a8c;
+    color: #293a8c;
+
+    @include phone {
+        display: block;
+        margin-left: 20px;
+
+    }
+
 }
+
