@@ -38,6 +38,11 @@
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
       grid-template-areas: "header header" "main main" "aside aside" "footer footer"; } }
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+    .gridcontainer {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-areas: "header header header" "main main main" "aside aside aside" "footer footer footer"; } }
 
 /**MIXIN**/
 .header {
@@ -64,6 +69,9 @@
       flex-direction: column;
       align-items: flex-start; } }
   @media screen and (min-width: 576px) and (max-width: 767px) {
+    .header {
+      flex-direction: column; } }
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
     .header {
       flex-direction: column; } }
   .header .logo__img {
@@ -204,6 +212,9 @@
         .header .login .login__btn {
           margin-bottom: 10px; } }
       @media screen and (min-width: 576px) and (max-width: 767px) {
+        .header .login .login__btn {
+          margin-bottom: 10px; } }
+      @media screen and (min-width: 992px) and (max-width: 1200px) {
         .header .login .login__btn {
           margin-bottom: 10px; } }
       .header .login .login__btn:hover {

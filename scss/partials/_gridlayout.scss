@@ -42,6 +42,15 @@
                              "footer footer";
     }
 
+    @include desktop {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "header header header"
+                             "main main main"
+                             "aside aside aside"
+                             "footer footer footer";
+    }
+
    
 
     grid-template-areas: "header header header "

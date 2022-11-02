@@ -28,6 +28,9 @@
     @include mobile {
         flex-direction: column;
     }
+    @include desktop {
+        flex-direction: column;
+    }
       
        
 
@@ -188,6 +191,9 @@
                 margin-bottom: 10px;
             }
             @include mobile {
+                margin-bottom: 10px;
+            }
+            @include desktop {
                 margin-bottom: 10px;
             }
 
