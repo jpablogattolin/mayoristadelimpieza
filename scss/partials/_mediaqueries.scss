@@ -18,7 +18,7 @@
 }
  
 @mixin tablet { /*768x640*/
-    @media screen and (min-width:768px) and (max-width:991) {
+    @media screen and (min-width:768px) and (max-width:991px) {
         @content;
 
     }

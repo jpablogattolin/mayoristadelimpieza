@@ -31,5 +31,8 @@
     @include mobile {
         flex-direction: column;
     }
+    @include tablet {
+        flex-direction: column;
+    }
 
 }
