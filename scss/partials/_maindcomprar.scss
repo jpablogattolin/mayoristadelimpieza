@@ -9,6 +9,10 @@
         font-size: 30px;
         margin-left: 25px;
     }
+    @include phonesmall {
+        justify-content: flex-start;
+        margin-left: 25px;
+    }
 
 }
 
@@ -16,6 +20,9 @@
     display: flex;
     align-items: center;
     @include phone {
+        flex-direction: column;
+    }
+    @include phonesmall {
         flex-direction: column;
     }
 
@@ -57,6 +64,9 @@
     @include phone {
         margin-left: 0;
         margin-top: 10px;
+    }
+    @include phonesmall {
+        margin-top: 20px;
     }
 }
 

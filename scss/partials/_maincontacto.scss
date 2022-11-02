@@ -12,6 +12,10 @@
             display: block;
             margin-left: 20px;
         }
+        @include phonesmall {
+            justify-content: flex-start;
+            margin-left: 10px;
+        }
     }
 
     .contacto {
@@ -20,6 +24,9 @@
         display: flex;
         align-items: center;
         @include phone {
+            flex-direction: column;
+        }
+        @include phonesmall {
             flex-direction: column;
         }
 

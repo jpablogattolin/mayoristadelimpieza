@@ -13,3 +13,11 @@
 
 }
 
+.container {
+    display: flex;
+    @include phonesmall {
+        display: block;
+        margin-left: 50px;
+    }
+}
+

@@ -1,10 +1,10 @@
-@mixin phone {
+@mixin phone {  /*320x640*/
     @media screen and (max-width:320px) { 
         @content;
     }
 }
 
-@mixin phonesmall {
+@mixin phonesmall {   /*480x667*/
     @media only screen and (max-width:480px) {
         @content;
     }

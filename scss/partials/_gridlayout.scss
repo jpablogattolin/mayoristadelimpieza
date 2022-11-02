@@ -15,6 +15,15 @@
                              "footer";
 
     }
+    @include phonesmall {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "header"
+                             "main"
+                             "aside"
+                             "footer";
+
+    }
 
    
 

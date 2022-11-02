@@ -13,7 +13,9 @@
     border: 2px solid #293a8c;
     border-radius: 10px;
     @include flex(row,wrap,space-evenly,center);
+    
     @include phone {
+
         flex-direction: column;
         flex-wrap: wrap;
         align-items: flex-start;
@@ -31,7 +33,7 @@
             align-items: flex-start;
         };
         @include phonesmall {
-            margin-left: 50px;
+            margin-left: 150px;
         }
         height: 100px;
         width: 100px;
@@ -52,7 +54,7 @@
             
         }
         @include phonesmall {
-            margin-left: 60px;
+            margin-left: 150px;
         }
 
         &:hover {
@@ -76,6 +78,7 @@
         @include phonesmall {
             flex-direction: column;
             align-items: baseline;
+            margin-left: 100px;
         }
    
     
@@ -116,7 +119,7 @@
             margin-left: 30px;
         };
         @include phonesmall {
-            margin-left: 30px;
+            margin-left: 120px;
         }
 
         .login p {
