@@ -28,7 +28,11 @@
     @include mobile {
         flex-direction: column;
     }
+    @include tablet {
+        flex-direction: column;
+    }
     
+       
 
     .logo__img {
         @include phone {
@@ -98,6 +102,9 @@
         @include mobile {
             flex-direction: column;
             align-items: baseline;
+        }
+        @include tablet {
+            flex-direction: column;
         }
    
     

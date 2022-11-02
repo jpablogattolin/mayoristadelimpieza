@@ -33,6 +33,15 @@
                              "footer footer";
     }
 
+    @include tablet {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "header header"
+                             "main main"
+                             "aside aside"
+                             "footer footer";
+    }
+
    
 
     grid-template-areas: "header header header "
