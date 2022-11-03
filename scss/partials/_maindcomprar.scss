@@ -4,18 +4,22 @@
     font-size: 40px;
     color: #293a8c;
     justify-content: flex-end;
+
     @include phone {
         flex-direction: column;
         font-size: 30px;
         margin-left: 25px;
     }
+
     @include phonesmall {
         justify-content: flex-start;
         margin-left: 25px;
     }
+
     @include mobile {
         justify-content: center;
     }
+
     @include tablet {
         justify-content: center;
     }
@@ -25,12 +29,15 @@
 .ubicacion-contenedor {
     display: flex;
     align-items: center;
+
     @include phone {
         flex-direction: column;
     }
+
     @include phonesmall {
         flex-direction: column;
     }
+
     @include mobile {
         flex-direction: column;
     }
@@ -39,10 +46,10 @@
         display: flex;
         font-family: 'Rajdhani', sans-serif;
         font-size: 20px;
-        color:#698894;
+        color: #698894;
         margin-bottom: 30px;
         justify-content: center;
-     
+
     }
 
     .ubicacion__map {
@@ -50,40 +57,34 @@
         border: 2px solid #575783;
         border-radius: 10px;
         box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+
         @include phone {
             width: 250px;
             height: 250px;
         }
-    
+
     }
- 
+
 
 }
 
 .medios-de-pago {
     margin-left: 40px;
 
-     li {
+    li {
         list-style-type: none;
-        padding:10px;
+        padding: 10px;
         border: 2px solid #575783;
         border-radius: 10px;
         box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
-        }
+    }
+
     @include phone {
         margin-left: 0;
         margin-top: 10px;
     }
+
     @include phonesmall {
         margin-top: 20px;
     }
 }
-
-
-
-
-
-
-
-
-

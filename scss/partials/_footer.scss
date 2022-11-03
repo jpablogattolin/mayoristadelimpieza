@@ -7,6 +7,7 @@
     border-radius: 20px;
     padding: 15px 15px;
     background-color: #fff3c4;
+
     @include mobile {
         flex-direction: column;
     }
@@ -15,11 +16,13 @@
         display: flex;
         width: 70%;
         align-items: center;
+
         @include phone {
             flex-direction: row;
             flex-wrap: wrap;
             text-align: left;
         }
+
         @include mobile {
             flex-direction: row;
         }
@@ -33,48 +36,41 @@
         }
 
     }
-        .footer__redes {
-            display: flex;
-            width: 30%;
-            justify-content: space-evenly;
-            flex-flow: row nowrap;
-            list-style-type: none;
-            font-family: 'Roboto', sans-serif;
-            font-size: medium;
-            align-items: center;
+
+    .footer__redes {
+        display: flex;
+        width: 30%;
+        justify-content: space-evenly;
+        flex-flow: row nowrap;
+        list-style-type: none;
+        font-family: 'Roboto', sans-serif;
+        font-size: medium;
+        align-items: center;
+
+        @include phone {
+            flex-flow: column wrap;
+        }
+
+        @include mobile {
+            flex-direction: row;
+            margin-left: 180px;
+        }
+
+        .redes__p mark {
+            background-color: #7283ad;
+
             @include phone {
-                flex-flow: column wrap;
+                text-align: center;
             }
-            @include mobile {
-                flex-direction: row;
-                margin-left: 180px;
-            }
+        }
 
-            .redes__p mark {
-                background-color: #7283ad;
-                @include phone {
-                    text-align: center;
-                }
-            }
 
-            
-            .redes__a:hover {
-                transform: scaleX(1.5);
-                transition: all 1s ease;
-                color: blueviolet;
-            }
-            
+        .redes__a:hover {
+            transform: scaleX(1.5);
+            transition: all 1s ease;
+            color: blueviolet;
         }
 
     }
 
-
-
-
-
-
-
-
-
-
-
+}

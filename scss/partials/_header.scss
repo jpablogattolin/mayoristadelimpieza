@@ -1,8 +1,8 @@
 /**MIXIN**/
-@mixin flex($direction,$wrap,$justify,$align) {
+@mixin flex($direction, $wrap, $justify, $align) {
     display: flex;
     flex-direction: $direction;
-    flex-wrap:$wrap;
+    flex-wrap: $wrap;
     justify-content: $justify;
     align-items: $align;
 }
@@ -12,8 +12,8 @@
     background-color: #fff3c4;
     border: 2px solid #293a8c;
     border-radius: 10px;
-    @include flex(row,wrap,space-evenly,center);
-    
+    @include flex(row, wrap, space-evenly, center);
+
     @include phone {
 
         flex-direction: column;
@@ -21,31 +21,39 @@
         align-items: flex-start;
         justify-content: center;
     }
+
     @include phonesmall {
         flex-direction: column;
         align-items: flex-start;
     }
+
     @include mobile {
         flex-direction: column;
     }
+
     @include desktop {
         flex-direction: column;
     }
-      
-       
+
+
 
     .logo__img {
         @include phone {
             justify-content: flex-start;
             align-items: flex-start;
-        };
+        }
+
+        ;
+
         @include phonesmall {
             margin-left: 150px;
         }
+
         @include mobile {
-            margin-left:50px;
+            margin-left: 50px;
             margin-top: 10px;
         }
+
         height: 100px;
         width: 100px;
         border: 5px solid gray;
@@ -59,14 +67,17 @@
         font-family: 'Rajdhani', sans-serif;
         font-weight: 500;
         transform: scale(1.5);
+
         @include phone {
             margin-left: 50px;
-            margin-top: 5px;        
-            
+            margin-top: 5px;
+
         }
+
         @include phonesmall {
             margin-left: 150px;
         }
+
         @include mobile {
             margin-left: 50px;
         }
@@ -76,78 +87,88 @@
             transition: all 2s;
             box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 
-        }   
-    } 
-    
+        }
+    }
+
     .nav {
         @include mobile {
             margin-left: 50px;
         }
     }
+
     .nav__menu {
 
-        
-        @include flex(row,nowrap,center,center);
+
+        @include flex(row, nowrap, center, center);
         list-style-type: none;
+
         @include phone {
             flex-direction: column;
             flex-wrap: wrap;
             align-items: baseline;
         }
+
         @include phonesmall {
             flex-direction: column;
             align-items: baseline;
             margin-left: 100px;
         }
+
         @include mobile {
             flex-direction: column;
             align-items: baseline;
         }
+
         @include tablet {
             flex-direction: column;
             align-items: baseline;
         }
-   
-    
+
+
         .menu__li {
 
             a {
-                
-                @include flex(row,nowrap,space-evenly,center);
+
+                @include flex(row, nowrap, space-evenly, center);
                 color: #293a8c;
                 font-family: 'Oswald', sans-serif;
                 margin: 10px;
                 font-size: medium;
                 text-decoration: none;
-                
-                
+
+
             }
 
-             
-            
+
+
             &:hover {
-                
+
                 transform: scale(1.2);
                 transition: all 1s ease;
                 box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
                 border-radius: 10px;
             }
-            
-        }   
-            
-            
-    }      
-       
-                  
+
+        }
+
+
+    }
+
+
     .login {
-       
-        @include flex(column,wrap,center,center);
+
+        @include flex(column, wrap, center, center);
+
         @include phone {
             margin-left: 30px;
-        };
+        }
+
+        ;
+
         @include phonesmall {
             margin-left: 120px;
         }
+
         @include mobile {
             margin-left: 50px;
         }
@@ -155,7 +176,7 @@
         .login p {
             font-family: 'Oswald', sans-serif;
             padding: 5px 0;
-            
+
         }
 
         .login__label {
@@ -163,7 +184,7 @@
             font-family: 'Oswald', sans-serif;
             padding: 5px 0;
             box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-         
+
 
             &:hover {
 
@@ -177,22 +198,28 @@
         .login__input--grayfocus:focus {
             color: #000000;
             background-color: #b6b6d4;
-        }   
-            
+        }
+
         .login__btn {
 
             font-family: 'Oswald', sans-serif;
             margin-top: 5px;
             background-color: #6e769c;
+
             @include phone {
                 margin-bottom: 10px;
-            };
+            }
+
+            ;
+
             @include phonesmall {
                 margin-bottom: 10px;
             }
+
             @include mobile {
                 margin-bottom: 10px;
             }
+
             @include desktop {
                 margin-bottom: 10px;
             }
@@ -201,101 +228,47 @@
 
                 color: #575783;
 
-            }  
-        }    
+            }
+        }
     }
-            
- }        
-               
-                    
-                  
 
-        @-webkit-keyframes roll-in-blurred-left {
-            0% {
-                -webkit-transform: translateX(-1000px) rotate(-720deg);
-                transform: translateX(-1000px) rotate(-720deg);
-                -webkit-filter: blur(50px);
-                filter: blur(50px);
-                opacity: 0
-            }
-
-            100% {
-                -webkit-transform: translateX(0) rotate(0deg);
-                transform: translateX(0) rotate(0deg);
-                -webkit-filter: blur(0);
-                filter: blur(0);
-                opacity: 1
-            }
-        }
-
-        @keyframes roll-in-blurred-left {
-            0% {
-                -webkit-transform: translateX(-1000px) rotate(-720deg);
-                transform: translateX(-1000px) rotate(-720deg);
-                -webkit-filter: blur(50px);
-                filter: blur(50px);
-                opacity: 0
-            }
-
-            100% {
-                -webkit-transform: translateX(0) rotate(0deg);
-                transform: translateX(0) rotate(0deg);
-                -webkit-filter: blur(0);
-                filter: blur(0);
-                opacity: 1
-            }
-        }
-    
+}
 
 
 
 
+@-webkit-keyframes roll-in-blurred-left {
+    0% {
+        -webkit-transform: translateX(-1000px) rotate(-720deg);
+        transform: translateX(-1000px) rotate(-720deg);
+        -webkit-filter: blur(50px);
+        filter: blur(50px);
+        opacity: 0
+    }
 
+    100% {
+        -webkit-transform: translateX(0) rotate(0deg);
+        transform: translateX(0) rotate(0deg);
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1
+    }
+}
 
-    
+@keyframes roll-in-blurred-left {
+    0% {
+        -webkit-transform: translateX(-1000px) rotate(-720deg);
+        transform: translateX(-1000px) rotate(-720deg);
+        -webkit-filter: blur(50px);
+        filter: blur(50px);
+        opacity: 0
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-
-           
-               
-
-                    
-
-                       
-                               
-
-                                
-
-
-
-
-                    
-
-                
-
-
-
-
-               
+    100% {
+        -webkit-transform: translateX(0) rotate(0deg);
+        transform: translateX(0) rotate(0deg);
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1
+    }
+}

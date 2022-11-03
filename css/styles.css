@@ -428,8 +428,9 @@
     @media screen and (min-width: 320px) and (max-width: 477px) {
       .history .history__h1 {
         font-style: italic;
-        font-size: 30px;
-        justify-content: flex-start; } }
+        font-size: medium;
+        justify-content: flex-start;
+        flex-wrap: wrap; } }
     @media screen and (min-width: 478px) and (max-width: 575px) {
       .history .history__h1 {
         justify-content: left; } }
@@ -438,10 +439,15 @@
     font-family: 'Rajdhani', sans-serif;
     font-size: 20px;
     align-items: center;
-    /*576x640*/ }
+    /*576x640*/
+    /*320x640*/ }
     @media screen and (min-width: 576px) and (max-width: 767px) {
       .history .history__h2 {
         margin-left: 100px; } }
+    @media screen and (min-width: 320px) and (max-width: 477px) {
+      .history .history__h2 {
+        margin-left: 20px;
+        font-size: small; } }
   .history .history__img {
     display: flex;
     height: 200px;
@@ -472,23 +478,27 @@
   /*576x640*/ }
   @media screen and (min-width: 320px) and (max-width: 477px) {
     .table {
-      margin: 0; } }
+      margin: 0;
+      font-size: x-small; } }
   @media screen and (min-width: 478px) and (max-width: 575px) {
     .table {
       margin-left: 5px; } }
   @media screen and (min-width: 576px) and (max-width: 767px) {
     .table {
-      margin-left: 100px; } }
+      margin-left: 50px; } }
   .table .table tr:hover {
     background-color: #575783; }
   .table .table__th {
     font-family: 'Rajdhani', sans-serif;
     font-size: 2em;
-    border: 2px solid #293a8c; }
+    border: 2px solid #293a8c;
+    padding: 10px;
+    text-align: center; }
   .table .table__td {
     font-family: 'Rajdhani', sans-serif;
     font-size: 1em;
-    border: 2px solid #293a8c; }
+    border: 2px solid #293a8c;
+    padding: 10px; }
 
 .main__contacto {
   display: flex;

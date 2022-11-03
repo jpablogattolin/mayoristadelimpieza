@@ -1,85 +1,106 @@
-.history{
+.history {
     display: flex;
     flex-direction: column;
     justify-items: center;
     margin-top: 30px;
     margin-left: 100px;
-    gap:5px;
+    gap: 5px;
+
     @include phone {
-        margin:0px;
+        margin: 0px;
     }
+
     @include phonesmall {
         margin-left: 10px;
     }
+
     @include mobile {
-        margin-left:0;
+        margin-left: 0;
     }
+
     @include tablet {
         margin-left: 50px;
     }
 
-    .history__h1{
+    .history__h1 {
         display: flex;
         font-family: 'Rajdhani', sans-serif;
         font-size: 40px;
         justify-content: center;
         align-items: center;
-        
+
         @include phone {
-            font-style: italic;font-size: 30px;
+            font-style: italic;
+            font-size:medium;
             justify-content: flex-start;
+            flex-wrap: wrap;
 
         }
+
         @include phonesmall {
             justify-content: left;
         }
-    
+
     }
 
-    .history__h2{
+    .history__h2 {
         margin-left: 15px;
         font-family: 'Rajdhani', sans-serif;
         font-size: 20px;
         align-items: center;
+
         @include mobile {
             margin-left: 100px;
         }
-    
+        @include phone {
+            margin-left: 20px;
+            font-size: small;
+        }
+
     }
 
-    .history__img{
-        display:flex;
-        height:200px;
+    .history__img {
+        display: flex;
+        height: 200px;
         width: 250px;
         border-radius: 10px;
         margin: 30px 30px 15px 300px;
+
         @include phone {
             margin-left: 25px;
         }
+
         @include phonesmall {
             margin: 10px 20px;
         }
+
         @include mobile {
-            margin-left:100px;
+            margin-left: 100px;
         }
-      
+
     }
- }
- 
- .table {
+}
+
+.table {
     border: 2px solid #293a8c;
     border-radius: 10px;
     justify-content: flex-end;
     margin-left: 100px;
     margin-top: 30px;
+
     @include phone {
-        margin:0;
+        margin: 0;
+        font-size:x-small;
+                
     }
+
     @include phonesmall {
-        margin-left:5px;
+        margin-left: 5px;
+        
     }
+
     @include mobile {
-        margin-left: 100px;
+        margin-left: 50px;
     }
 
     .table tr:hover {
@@ -90,26 +111,16 @@
         font-family: 'Rajdhani', sans-serif;
         font-size: 2em;
         border: 2px solid #293a8c;
-        
+        padding: 10px;
+        text-align: center;
+
     }
 
-    .table__td{
+    .table__td {
         font-family: 'Rajdhani', sans-serif;
         font-size: 1em;
         border: 2px solid #293a8c;
+        padding: 10px;
     }
-    
-} 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+
+}
