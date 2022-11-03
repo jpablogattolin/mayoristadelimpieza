@@ -1,0 +1,174 @@
+.main {
+    grid-area: main;
+    border-radius: 2px #698894;
+
+
+}
+
+.main__h1 {
+    font-family: 'Rajdhani', sans-serif;
+    display: flex;
+    justify-content: right;
+
+    @include phone {
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    @include phonesmall {
+        justify-content: left;
+    }
+
+    @include mobile {
+        justify-content: flex-start;
+    }
+
+    @include tablet {
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+
+.slider {
+    display: flex;
+    width: 500px;
+    height: 300px;
+    margin: 60px 40px 60px 200px;
+    position: relative;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    align-items: flex-end;
+
+    @include phone {
+        margin: 0px;
+        width: 300px;
+        height: 300px;
+        margin-left: 10px;
+    }
+
+    @include phonesmall {
+        margin: 0;
+        width: 300px;
+        height: 300px;
+        margin-left: 80px;
+        margin-top: 10px;
+    }
+
+    @include mobile {
+        margin-left: 25px;
+    }
+
+    @include tablet {
+        margin-left: 100px;
+        margin-top: 20px;
+    }
+}
+
+.slider__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    opacity: 0;
+    border-radius: 10px;
+
+}
+
+.slider__input {
+    position: relative;
+    z-index: 50;
+    margin: 10px;
+
+    &:checked~img {
+        opacity: 1;
+
+    }
+}
+
+/*** EXTEND***/
+
+.content {
+    display: flex;
+    padding: 10px;
+    margin-left: 100px;
+    gap: 50px;
+    flex-flow: row nowrap;
+    width: 100%;
+
+    @include phone {
+        flex-flow: column wrap;
+        margin-left: 0;
+        gap: 10px
+    }
+
+    @include phonesmall {
+        margin-left: 0;
+        gap: 5px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    @include mobile {
+        margin-left: 0;
+        gap: 5px;
+    }
+
+    @include tablet {
+        margin-left: 50px;
+        gap: 30px;
+    }
+
+    .content li {
+        list-style-type: none;
+    }
+
+    .content__location {
+        display: flex;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: large;
+        border: 2px solid #293a8c;
+        background-color: #fff3c4;
+        border-radius: 20px;
+        flex-wrap: wrap;
+        padding: 15px;
+
+    }
+
+    .content__marcas {
+        @extend .content__location;
+
+        /*display: flex;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: large;
+        border: 2px solid #293a8c;
+        background-color: #fff3c4;
+        border-radius: 20px;
+        flex-wrap: wrap;
+        padding: 15px;*/
+        @include phonesmall {
+            flex-direction: column;
+        }
+    }
+
+
+    .content__enlaces {
+
+        @extend .content__location;
+        /*display: flex;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: large;
+        border: 2px solid #293a8c;
+        background-color: #fff3c4;
+        border-radius: 20px;
+        padding: 15px;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;*/
+    }
+
+
+}

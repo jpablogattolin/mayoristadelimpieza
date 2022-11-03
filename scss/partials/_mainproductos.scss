@@ -1,0 +1,41 @@
+.h1__prod {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rajdhani', sans-serif;
+    color: #293a8c;
+
+    @include phone {
+        display: block;
+        margin-left: 20px;
+    }
+
+    @include phonesmall {
+        justify-content: flex-start;
+    }
+
+}
+
+.container {
+    display: flex;
+
+    @include phonesmall {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    @include phone {
+        display: block;
+        margin-left: 5px;
+    }
+
+    @include mobile {
+        flex-direction: column;
+    }
+
+    @include tablet {
+        flex-direction: column;
+    }
+
+}
